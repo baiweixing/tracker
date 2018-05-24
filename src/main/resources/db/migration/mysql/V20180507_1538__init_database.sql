@@ -1,0 +1,9 @@
+
+CREATE TABLE IF NOT EXISTS  `route_history` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `relicId` INT(11) NOT NULL COMMENT '文物ID',
+  `longitude` DOUBLE NOT NULL COMMENT '经度',
+  `latitude` DOUBLE NOT NULL COMMENT '纬度',
+  `time` DATETIME NOT NULL COMMENT '上传时间',
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='记录文物位置坐标'
